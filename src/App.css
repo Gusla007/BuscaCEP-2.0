@@ -1,0 +1,85 @@
+/* Define o fundo preto e a imagem de fundo opcional */
+body {
+    margin: 0;
+    padding: 0;
+    background: url('/images/background.jpg') no-repeat center center fixed, #000; /* Imagem e cor de fundo preto */
+    background-size: cover; /* Faz com que a imagem cubra toda a área */
+    font-family: Arial, sans-serif;
+
+    /* Flexbox para centralização do conteúdo */
+    display: flex;
+    justify-content: center; /* Alinha o conteúdo horizontalmente */
+    align-items: center; /* Alinha o conteúdo verticalmente */
+    min-height: 100vh; /* Garante que o conteúdo seja centralizado na altura total da tela */
+}
+
+/* Estilo do contêiner principal do aplicativo */
+.App {
+    padding: 20px;
+    max-width: 600px;
+    width: 100%; /* Garante que o contêiner utilize a largura máxima permitida */
+    background: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Estilo do título */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Estilo dos grupos de formulário */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Estilo dos rótulos dos inputs */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Estilo dos campos de entrada */
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Estilo dos campos somente leitura */
+input[readonly] {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+}
+
+/* Estilo do botão */
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Estilo do botão ao passar o mouse */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo das mensagens de erro */
+.error {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
